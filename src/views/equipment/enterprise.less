@@ -1,0 +1,79 @@
+.enterpriseWrap{
+    overflow: hidden;
+    .tablesWrap{
+        margin-top: 20px;
+        display: flex;
+        overflow: hidden;
+        background-color: #fff;
+        min-height: calc(100vh - 280px);
+        .leftTable{
+            width: 100%;
+            margin-right: 20px;
+            animation-duration:3s;
+            animation-delay: 0s;
+            background-color: #fff;
+            animation-fill-mode: forwards
+        }
+        .rightTable{
+            width: 0%;
+            animation-duration:3s;
+            animation-fill-mode: forwards;
+            .tableInfo{
+              height: 27px;  
+              line-height: 14px;
+              margin-top: -10px;
+              div{
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+              }
+            }
+        }
+    }
+    @keyframes leftChange
+    {
+        from {width: 100%;}
+        to {width: 65%;}
+    }
+    @keyframes rightChange
+    {
+        0% {width: 0%;padding-right:0px}
+        100% {width: 35%;padding-right:20px}
+    }
+}
+.modelBig{
+    width: 820px !important;
+    height: 600px !important;
+    // .ant-legacy-form-item-control{
+    //     padding: 5px!important;
+    // }
+    .map {
+        width: 450px;
+        height: 400px;
+        // border: 1px solid red;
+    }
+    .inputBox,.map{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .modelBigenterprise{
+        // padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid red;
+    }
+    .ant-form {
+        width: 300px !important;
+    }
+    .ant-form-item-control{
+        width: 180px!important;
+    }
+    .map, .ant-form {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .ant-legacy-form-item label{
+        top: -3px!important;
+    }
+}

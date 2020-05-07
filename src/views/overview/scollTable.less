@@ -1,0 +1,85 @@
+.ceShiTable {
+    font-size: 14px;
+    height: 350px;
+    color:#FFF;
+    .name{
+        width: 170px;
+        height: 70px;
+        text-align: center;
+        display: flex;   
+        text-align: center;         
+        justify-content: center;
+        align-items: center;
+        .name-div{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    }
+    .time{
+        width: 100px;
+        height: 70px;
+        display: flex;   
+        text-align: center;         
+        justify-content: center;
+        align-items: center;
+        .time-div{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    }
+    .detail{
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        display: flex;   
+        text-align: center;         
+        justify-content: center;
+        align-items: center;
+        .detail-div{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    }
+    .img{
+        width: 80px;
+        height: 50px;
+        margin: 10px auto;
+    }
+    .ceShiTable-body {
+        height: 350px;
+        overflow-y: scroll;
+        ul {
+            padding-inline-start: 0px;
+            .noData {
+                height: 78px;
+                line-height: 78px;
+                text-align: center;
+            }
+            li {
+                background: transparent;
+                display: flex;
+                align-items: center;
+                min-height: 24px;
+                span {
+                    font-size: 14px;
+                }
+            }
+            li:nth-child(2n) {
+                background: #182B57
+            }
+            li:hover {
+                background: rgba(87, 98, 250, 0.4);
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
